@@ -1,0 +1,154 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: $bodyFont;
+  background-color: $veryDarkBlue;
+  font-size: $bodySize;
+  color: $white;
+}
+
+.container {
+  width: calc(min(90%, 33rem));
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.submitted {
+  display: flex !important;
+}
+
+.card {
+  background: linear-gradient(0deg, #171e28 0%, #1f2630 100%);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 2rem;
+  height: 35rem;
+}
+
+.input-screen {
+  .input__star {
+    background-color: #242e39;
+    height: auto;
+    display: flex;
+    width: 3.4rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  .input__title {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+    font-weight: $heavyWeight;
+  }
+  .input__subtext {
+    line-height: 1.6;
+    color: $lightGrey;
+    font-size: 1.3rem;
+    font-weight: $heavyWeight;
+  }
+  .rating-section {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 2.4rem;
+    button {
+      outline: none;
+      border: none;
+      padding: 1.2rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      font-weight: $heavyWeight;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #242e39;
+      color: $lightGrey;
+      font-family: $bodyFont;
+      border-radius: 50%;
+      &:hover {
+        background-color: $lightGrey;
+        color: $white;
+      }
+      &:focus {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+  }
+  .input__button {
+    outline: none;
+    border: none;
+    font-family: $bodyFont;
+    font-size: 1.3rem;
+    font-weight: $heavyWeight;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $orange;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $white;
+      color: $orange;
+    }
+  }
+}
+
+.submit-screen {
+  display: flex;
+  display: none;
+  align-items: center;
+  padding: 2rem inherit;
+  gap: 2rem;
+  .submit__image {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    img {
+      align-self: center;
+      height: auto;
+      width: 14rem;
+    }
+    p {
+      background-color: #242e39;
+      color: $orange;
+      padding: 0.6rem 1.5rem;
+      border-radius: 2rem;
+    }
+  }
+  .submit__title {
+    font-size: 2.5rem;
+  }
+  .submit__subtext {
+    text-align: center;
+    color: $lightGrey;
+    line-height: 1.6;
+  }
+}

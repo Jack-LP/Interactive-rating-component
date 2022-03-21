@@ -1,0 +1,19 @@
+// Imports
+@import url(https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+// Font
+$bodyFont: Overpass, sans-serif;
+
+$lightWeight: 400;
+$heavyWeight: 700;
+
+$bodySize: 1.5rem;
+
+// Color
+$white: #fff;
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+$orange: hsl(25, 97%, 53%);
